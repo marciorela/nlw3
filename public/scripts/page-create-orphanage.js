@@ -91,3 +91,13 @@ function toggleSelect(event) {
     // verificar se é sim ou Não
     input.value = button.dataset.value;
 }
+
+function validate(event) {
+
+    // validar se lat e lng estão preenchidos
+    const needsLatAndLng = false;
+    if (needsLatAndLng) {
+        event.preventDefault();
+        alert('Selecione a localização no mapa')
+    }
+}
